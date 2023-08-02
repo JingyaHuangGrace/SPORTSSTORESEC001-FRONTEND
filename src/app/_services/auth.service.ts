@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
 
  
 
-const AUTH_API = 'http://localhost:8081/api/auth/';
+//const AUTH_API = 'http://localhost:8081/api/auth/';
+const AUTH_API = 'https://tim-sportshopn.onrender.com/api/auth/';
 
  
 
