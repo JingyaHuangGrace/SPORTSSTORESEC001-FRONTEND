@@ -4,23 +4,23 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
- 
+
 
 //const AUTH_API = 'http://localhost:8081/api/auth/';
 const AUTH_API = 'https://tim-sportshopn.onrender.com/api/auth/';
 
- 
+
 
 const httpOptions = {
 
   headers: new HttpHeaders({
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
-      })
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+  })
 };
 
- 
+
 
 @Injectable({
 
@@ -32,7 +32,7 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
- 
+
 
   login(username: string, password: string): Observable<any> {
 
@@ -54,7 +54,7 @@ export class AuthService {
 
   }
 
- 
+
 
   register(username: string, email: string, password: string): Observable<any> {
 
@@ -78,7 +78,7 @@ export class AuthService {
 
   }
 
- 
+
 
   logout(): Observable<any> {
 
